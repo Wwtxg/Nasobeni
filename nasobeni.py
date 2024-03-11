@@ -13,8 +13,9 @@ def nasobenifunkce (x, y):
     return nasobeni
 
 def delenifunkce (x, y):
+    x = float
+    y = float
     deleni = x / y
-    deleni = float
     return deleni
 
 def minusfunkce (x, y):
@@ -44,6 +45,7 @@ for a in range(9):
         Spravna_odpoved = nasobenifunkce (x, y)
     elif pmdn == "/":
         Spravna_odpoved = delenifunkce (x, y)
+
 
     print ("Vase odpoved: ", odpoved)
     print ("Spravna odpoved: ", Spravna_odpoved)
