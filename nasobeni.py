@@ -13,8 +13,6 @@ def nasobenifunkce (x, y):
     return nasobeni
 
 def delenifunkce (x, y):
-    x = float
-    y = float
     deleni = x / y
     return deleni
 
@@ -45,12 +43,13 @@ for a in range(9):
         Spravna_odpoved = nasobenifunkce (x, y)
     elif pmdn == "/":
         Spravna_odpoved = delenifunkce (x, y)
-
+    
+    Rounded_Spravna_odpoved = round(Spravna_odpoved, 2)
 
     print ("Vase odpoved: ", odpoved)
-    print ("Spravna odpoved: ", Spravna_odpoved)
+    print ("Spravna odpoved: ", Rounded_Spravna_odpoved)
 
-    if odpoved == Spravna_odpoved:
+    if odpoved == Rounded_Spravna_odpoved:
         print ("Spavně")
         PocetboduF = PocetB(Pocetbodu, plusbody)
         Pocetbodu = PocetboduF
